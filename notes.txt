@@ -1,0 +1,6 @@
+AWS Sagemaker
+SageMaker provides a complete set of tools for every step of the machine learning process, from data labeling and preparation to model training and deployment, making it easier to develop and deploy machine learning models in production environments.
+
+
+Data Staging
+Data staging involves collecting, preparing, and organizing the data that will be used to train and test machine learning models. 
