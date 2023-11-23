@@ -1,5 +1,6 @@
 # data
 /cifar-100-python
+*.txt
 
 # zip files
 *.gz
