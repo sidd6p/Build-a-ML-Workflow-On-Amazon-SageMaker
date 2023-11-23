@@ -2,7 +2,7 @@
 /cifar-100-python
 
 # zip files
-.gz
+*.gz
 */cifar-100-python
 
 # Byte-compiled / optimized / DLL files
