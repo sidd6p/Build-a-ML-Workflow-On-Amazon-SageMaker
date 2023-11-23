@@ -18,6 +18,14 @@
 - Select an execution role with full Sagemaker Access. If such a role does not exist, create a new one.
 - Follow the steps to create the role and complete the user creation process.
 
+#### Setting up this notebook
+- Notes about the instance size and kernel setup: this notebook has been tested on
+- All the starter files for this project are located at the project folder in this repo.
+
+1. The `Python 3 (Data Science)` kernel
+2. The `ml.t3.medium` Sagemaker notebook instance
+
+
 ### Lambda Functions
 
 #### Overview
@@ -37,3 +45,5 @@
   2. In the AWS console, locate and select Step Function.
   3. Begin creating a state machine.
   4. Opt to design your workflow visually and create a basic Step function for your project.
+
+
