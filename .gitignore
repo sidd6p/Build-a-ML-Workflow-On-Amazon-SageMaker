@@ -1,6 +1,8 @@
 # data
 /cifar-100-python
 *.txt
+/train
+/test
 
 # zip files
 *.gz
