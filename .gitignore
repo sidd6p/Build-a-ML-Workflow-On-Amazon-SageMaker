@@ -1,3 +1,6 @@
+# Other
+*.html
+
 # data
 /cifar-100-python
 *.txt
