@@ -40,3 +40,4 @@
 - **Amazon S3**: Used for storing and retrieving the dataset and model outputs. It provides a scalable and secure storage solution.
 - **Amazon SageMaker**: Employed for building, training, and deploying machine learning models. SageMaker's robust and flexible environment streamlines the machine learning workflow.
 - **AWS Lambda**: Utilized for creating serverless functions that interact with other AWS services like SageMaker.
+- **Step Functions**: Used them to chain the lmabda function to create a ML workflow
