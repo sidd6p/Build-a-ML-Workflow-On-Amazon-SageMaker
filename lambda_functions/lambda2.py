@@ -3,7 +3,7 @@ import json
 import base64
 
 # The name of the endpoint in AWS SageMaker to be invoked
-ENDPOINT_NAME = endpoint
+ENDPOINT_NAME = ""
 
 # Create a SageMaker runtime client using Boto3. This is used to invoke the SageMaker endpoint.
 runtime = boto3.client('runtime.sagemaker')
