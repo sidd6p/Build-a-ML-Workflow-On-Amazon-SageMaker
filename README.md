@@ -1,49 +1,35 @@
-# Build-a-ML-Workflow-For-Scones-Unlimited-On-Amazon-SageMaker
+# Deploy and monitor a machine learning workflow for Image Classification
 
+1. __Data Staging__
+    1. Extract the data from a hosting service
+    2. Transform it into a usable shape and format
+    3. Explore the data
+    4. Filter the objects to find the label numbers for Bicycle and Motorcycles
+    5. Convert the object into the dataframe
+    6. Save the data to the local machine
+    7. Load it into a production system
+    
+2. __Model Training__
+    1. Create metadata for image classification on SageMaker
+    2. Upload metadata to S3 using `boto3`
+    3. Get algorithm using ECR image
+    4. Create estimator
+    5. Add hyperparameters to the estimator
+    6. Add model inputs
+    7. Fit the model
 
-
-## Project AWS-Setup Instructions
-
-### Sagemaker Studio Setup
-
-#### Initial Setup
-- If you have previously set up a Sagemaker Studio User in the course, simply launch the studio.
-- For a refresher on how to launch:
-  1. Navigate to the AWS console through the AWS Gateway.
-  2. In the AWS console, find and select Amazon Sagemaker.
-  3. From the Sagemaker main page, access Amazon Sagemaker Studio using the left-hand toolbar.
-
-#### User Creation
-- Check if a user already exists in the Sagemaker Studio Control Panel. If not, proceed to 'Add user'.
-- Select an execution role with full Sagemaker Access. If such a role does not exist, create a new one.
-- Follow the steps to create the role and complete the user creation process.
-
-#### Setting up this notebook
-- Notes about the instance size and kernel setup: this notebook has been tested on
-- All the starter files for this project are located at the project folder in this repo.
-
-1. The `Python 3 (Data Science)` kernel
-2. The `ml.t3.medium` Sagemaker notebook instance
-
-
-### Lambda Functions
-
-#### Overview
-- By this stage in the project, you should have created and deployed several Lambda functions.
-- To test or revisit Lambda functions setup:
-  1. Open the AWS console via the AWS Gateway.
-  2. Navigate to Amazon Lambda within the console.
-  3. Start the process to create a new Lambda function.
-  4. Ensure that the Lambda function is operational by conducting a test.
-
-### Step Function Visual Editor
-
-#### Access and Verification
-- You should already have access to the Step Function Visual Editor.
-- To verify or access the editor:
-  1. Go to the AWS console through the AWS Gateway.
-  2. In the AWS console, locate and select Step Function.
-  3. Begin creating a state machine.
-  4. Opt to design your workflow visually and create a basic Step function for your project.
-
-
+3. __Getting ready to deploy__
+    1. Creating data capture
+    2. Model deployment and creating the endpoint
+    3. Instantiating a predictor
+    4. Making Prediction
+    
+4. __Draft Lambdas and Step Function Workflow__
+    1. Lambad 1: Serialize target data from S3
+    2. Lambad 2: Classification of image
+    3. Lambda 3: Check for confidence threshold
+    
+5. __Testing and Evaluation__
+    1. Generating multiple test cases (event input for lambda 1)
+    2. Pulling in the JSONLines data from your inferences
+    3. Plotting the results
