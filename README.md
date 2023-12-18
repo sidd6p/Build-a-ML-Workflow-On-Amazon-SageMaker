@@ -41,3 +41,7 @@
 - **Amazon SageMaker**: Employed for building, training, and deploying machine learning models. SageMaker's robust and flexible environment streamlines the machine learning workflow.
 - **AWS Lambda**: Utilized for creating serverless functions that interact with other AWS services like SageMaker.
 - **Step Functions**: Used them to chain the lmabda function to create a ML workflow
+
+![image](https://github.com/sidd6p/Build-a-ML-Workflow-On-Amazon-SageMaker/assets/91800813/20c32540-9cd6-407e-bef5-3f7ebbec36f9)
+![image](https://github.com/sidd6p/Build-a-ML-Workflow-On-Amazon-SageMaker/assets/91800813/efad0490-5f65-413e-b6e5-d3eae0e7f66b)
+
